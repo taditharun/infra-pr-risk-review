@@ -25,3 +25,12 @@ jobs:
 
       - name: Run tests
         run: python3 -m unittest discover -s tests -v
+
+      - name: Show plan preview
+        shell: bash
+        run: |
+          {
+            printf '## Terraform plan preview\n\n'
+            printf 'Generated from the synthetic sample plan.\n\n'
+            python3 src/read_plan.py fixtures/plan.json | sed 's/^/    /'
+          } >> "$GITHUB_STEP_SUMMARY"
