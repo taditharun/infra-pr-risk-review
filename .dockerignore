@@ -1,0 +1,5 @@
+**
+!src/
+!src/read_plan.py
+!fixtures/
+!fixtures/plan.json

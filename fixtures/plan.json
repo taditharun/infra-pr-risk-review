@@ -1,0 +1,13 @@
+{
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket.demo",
+      "change": {
+        "actions": ["create"],
+        "after": {
+          "example_note": "MADE_UP_VALUE"
+        }
+      }
+    }
+  ]
+}
